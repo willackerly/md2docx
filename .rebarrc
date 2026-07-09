@@ -1,0 +1,27 @@
+# Rebar configuration for md2docx
+#
+# Tier controls which checks are enforced:
+#   1 = Partial  — contract refs + TODOs only (solo dev / early adoption)
+#   2 = Adopted  — + headers, freshness, registry (small team)
+#   3 = Enforced — + ground truth, compliance (department / production)
+#
+# md2docx is a solo-maintained CLI tool, but it ships two production
+# converters with a documented round-trip contract, so the enforcement
+# scripts are wired in full: contract references, TODO tracking, doc
+# freshness, and ground-truth metrics all run and are expected to pass.
+
+tier = 3
+
+# Version compatibility
+REBAR_VERSION=3.0.0
+
+# Optional: Override specific check behaviors
+# REBAR_SKIP_CHECKS="check-freshness"
+# REBAR_TODO_STRICT=true
+# REBAR_CONTRACT_STRICT=false
+
+# ─── Deliberate ci-check skips (SKIP_* convention, honored by ci-check.sh) ───
+# md2docx does not ship the rebar Steward or a `templates/` bootstrap tree —
+# it is a Tier 3 adopter, not a rebar-source repo. There is no ci-check.sh
+# in this repo; scripts are run individually (see scripts/README.md).
+SKIP_BOOTSTRAP_SYNC=1

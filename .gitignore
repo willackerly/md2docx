@@ -1,0 +1,19 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS cruft
+.DS_Store
+
+# Test artifacts — generated DOCX files from running the converters
+*.docx
+!tests/fixtures/**/*.docx
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Agent worktrees / local tooling state (never scanned by enforcement scripts)
+.claude/
