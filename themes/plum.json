@@ -1,0 +1,32 @@
+{
+  "name": "Plum",
+  "_comment": "A purple-accented house style. Deep-merges over themes/neutral.json — only the keys below are overridden; everything else (table style, blockquote indent, banner detection) falls back to neutral. footer.text is intentionally empty: ship no confidential-style footer text by default, add your own per-deployment.",
+  "fonts": { "body": "Arial", "mono": "Consolas" },
+  "base": { "size_pt": 10, "color": "1A1A1A", "space_after_pt": 6 },
+  "headings": {
+    "h1": { "size_pt": 18, "color": "2B2350" },
+    "h2": { "size_pt": 14, "color": "9C3D9E" },
+    "h3": { "size_pt": 11.5, "color": "9C3D9E" },
+    "h4": { "size_pt": 10.5, "color": "3F3163" },
+    "bold": true,
+    "space_before_pt": 12,
+    "space_after_pt": 5
+  },
+  "table": {
+    "style": "Table Grid",
+    "header_fill": "EDE9F6",
+    "header_color": "3F3163",
+    "header_bold": true,
+    "cell_size_pt": 9.5
+  },
+  "code": { "fill": "F2F0F7", "color": "332E44", "block_size_pt": 8.5 },
+  "blockquote": {
+    "color": "555555",
+    "size_pt": 9.5,
+    "border_color": "9C3D9E",
+    "border_size_eighths": 18,
+    "indent_in": 0.3
+  },
+  "footer": { "text": "", "color": "D3A5DC", "size_pt": 10, "bold": true },
+  "cui_banner": { "detect": true, "size_pt": 10, "bold": true, "color": "000000" }
+}

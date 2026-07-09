@@ -1,0 +1,32 @@
+{
+  "name": "Marked Docs",
+  "_comment": "Banner-forward variant for documents that carry a portion-marking or classification-style banner on every page (a leading **BANNER TEXT** line in the source — see the cui_banner feature in README.md). Restrained black-on-white palette so the banner stays the visual anchor. footer.text is empty because the banner (when present) already replaces the footer per the cui_banner behavior in md2docx.py; without a banner line this theme prints no footer at all.",
+  "fonts": { "body": "Calibri", "mono": "Consolas" },
+  "base": { "size_pt": 10.5, "color": "1A1A1A", "space_after_pt": 6 },
+  "headings": {
+    "h1": { "size_pt": 17, "color": "000000" },
+    "h2": { "size_pt": 13.5, "color": "000000" },
+    "h3": { "size_pt": 11, "color": "1A1A1A" },
+    "h4": { "size_pt": 10.5, "color": "333333" },
+    "bold": true,
+    "space_before_pt": 12,
+    "space_after_pt": 5
+  },
+  "table": {
+    "style": "Table Grid",
+    "header_fill": "DDDDDD",
+    "header_color": "000000",
+    "header_bold": true,
+    "cell_size_pt": 9.5
+  },
+  "code": { "fill": "F0F0F0", "color": "1A1A1A", "block_size_pt": 8.5 },
+  "blockquote": {
+    "color": "444444",
+    "size_pt": 9.5,
+    "border_color": "000000",
+    "border_size_eighths": 24,
+    "indent_in": 0.3
+  },
+  "footer": { "text": "", "color": "000000", "size_pt": 10, "bold": true },
+  "cui_banner": { "detect": true, "size_pt": 11, "bold": true, "color": "000000" }
+}

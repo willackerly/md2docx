@@ -1,0 +1,32 @@
+{
+  "name": "Neutral",
+  "_comment": "The built-in defaults, shipped as a JSON file so they're documented and diffable. Deep-merges over nothing (this IS the base) — every other theme deep-merges over these values, so any key a theme omits falls back to what's here. See architecture/CONTRACT-C1-THEME-SCHEMA.1.0.md for the full key reference and resolution order.",
+  "fonts": { "body": "Calibri", "mono": "Consolas" },
+  "base": { "size_pt": 10.5, "color": "1A1A1A", "space_after_pt": 6 },
+  "headings": {
+    "h1": { "size_pt": 18, "color": "000000" },
+    "h2": { "size_pt": 14, "color": "000000" },
+    "h3": { "size_pt": 11.5, "color": "000000" },
+    "h4": { "size_pt": 10.5, "color": "333333" },
+    "bold": true,
+    "space_before_pt": 12,
+    "space_after_pt": 5
+  },
+  "table": {
+    "style": "Table Grid",
+    "header_fill": "EEEEEE",
+    "header_color": "222222",
+    "header_bold": true,
+    "cell_size_pt": 9.5
+  },
+  "code": { "fill": "F5F5F5", "color": "333333", "block_size_pt": 8.5 },
+  "blockquote": {
+    "color": "555555",
+    "size_pt": 9.5,
+    "border_color": "888888",
+    "border_size_eighths": 18,
+    "indent_in": 0.3
+  },
+  "footer": { "text": "", "color": "999999", "size_pt": 10, "bold": true },
+  "cui_banner": { "detect": true, "size_pt": 10, "bold": true, "color": "000000" }
+}
