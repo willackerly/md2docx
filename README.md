@@ -39,11 +39,11 @@ python3 docx2md.py notes.docx
 ### Markdown → DOCX
 
 ```bash
-md2docx.py file.md [more.md ...]            # writes <name>.docx next to each source
-md2docx.py -t themes/plum.json file.md      # explicit theme
-md2docx.py -o outdir file.md [more.md ...]  # write outputs into a directory
-md2docx.py -o out.docx file.md              # single input, explicit output path
-md2docx.py --no-footer file.md              # suppress footer text
+python3 md2docx.py file.md [more.md ...]            # writes <name>.docx next to each source
+python3 md2docx.py -t themes/plum.json file.md      # explicit theme
+python3 md2docx.py -o outdir file.md [more.md ...]  # write outputs into a directory
+python3 md2docx.py -o out.docx file.md              # single input, explicit output path
+python3 md2docx.py --no-footer file.md              # suppress footer text
 ```
 
 **Markdown support:** h1–h4; bullet lists; literal numbered lists;
@@ -63,11 +63,11 @@ line); it doesn't reference any particular real-world marking scheme.
 ### DOCX → Markdown
 
 ```bash
-docx2md.py file.docx [-o out.md]      # default output next to input
+python3 docx2md.py file.docx [-o out.md]      # default output next to input
 ```
 
 Prints a provenance summary to stderr (see below) and writes canonical
-Markdown to stdout's target file (or a redirected path via `-o`).
+Markdown next to the input, or to the path given with `-o`.
 
 ---
 
